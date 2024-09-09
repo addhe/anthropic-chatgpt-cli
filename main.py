@@ -83,7 +83,7 @@ def main() -> None:
             print("\nClaude:", end=' ')
             print_char_by_char(response)
             conversation_history.extend([
-                {"role": "user", "content": user_input},
+                {"role": "human", "content": user_input},
                 {"role": "assistant", "content": response}
             ])
 
